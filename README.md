@@ -1,0 +1,1 @@
+lil' demo of [ffmpeg-wasm](https://ffmpegwasm.netlify.app/). `npm install`, `npm start`.
