@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<title>ffmpeg-wasm demo</title>
+
+		<style>
+			canvas, video {
+				display: block;
+				background: #ddd;
+				filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1));
+				width: 320px;
+				max-width: 100%;
+				aspect-ratio: 16 / 9;
+				margin: 1em 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>ffmpeg-wasm demo</h1>
+		<input id="color" type="color" value="#604eef" />
+		<input id="text" value="wheeeeeee!!!" />
+		<canvas width="640" height="360"></canvas>
+		<button id="button">record</button>
+
+		<h2>output</h2>
+		<video id="video" autoplay loop controls></video>
+
+		<script src="/vendor/ffmpeg.min.js"></script>
+		<script type="module" src="/app.js"></script>
+	</body>
+</html>
